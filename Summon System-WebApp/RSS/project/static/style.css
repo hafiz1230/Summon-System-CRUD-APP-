@@ -1,0 +1,88 @@
+.main-container
+{
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    width: 70%;
+    margin: auto;
+    margin-top: 1%;
+    padding: 10px;
+    padding-left: 10px;
+    font-size: 40px; /* Increase font-size */
+}
+
+/**********************CSS FOR DATAS*********************************/
+#search {
+    background-position: 10px 12px; /* Position the search icon */
+    background-repeat: no-repeat; /* Do not repeat the icon image */
+    width: 60%; /* Full-width */
+    font-size: 16px; /* Increase font-size */
+    padding: 12px 20px 12px 40px; /* Add some padding */
+    border: 1px solid rgb(48, 208, 219); 
+    margin-bottom: 12px; /* Add some space below the input */
+}
+
+#myTable 
+{
+    border-collapse: collapse; /* Collapse borders */
+    width: 100%; /* Full-width */
+    border: 1px solid rgb(88, 25, 204); 
+    font-size: 18px; /* Increase font-size */
+}
+
+#myTable th, #myTable td {
+    text-align: left; /* Left-align text */
+    padding: 12px; /* Add padding */
+}
+
+#myTable tr 
+{
+    /* Add a bottom border to all table rows */
+    border-bottom: 1px solid rgb(55, 17, 224);
+}
+  
+#myTable tr.header, #myTable tr:hover 
+{
+    /* Add a grey background color to the table header and on hover */
+    background-color: #17e0e7;
+}
+
+/*************************************************************************/
+
+/****************************CSS FOR DATA********************************/
+
+#mySelectData 
+{
+    border-collapse: collapse; /* Collapse borders */
+    width: 100%; /* Full-width */
+    border: 1px solid rgb(88, 25, 204); 
+    font-size: 30px; /* Increase font-size */
+}
+
+#mySelectData th, #mySelectData td 
+{
+    text-align: left; /* Left-align text */
+    padding: 12px; /* Add padding */
+}
+  
+#mySelectData tr 
+{
+    /* Add a bottom border to all table rows */
+    border-bottom: 1px solid rgb(55, 17, 224);
+}
+  
+#mySelectData tr.header1, #mySelectData tr:hover 
+{
+    /* Add a grey background color to the table header and on hover */
+    background-color: #17e0e7;
+}
+
+  /************************************************************************/
+
+  /***************************button and block CSS**************************************/
+
+.buttonblock
+{
+    font-size: 20px; /* Increase font-size */
+    text-align: center;
+}

@@ -1,0 +1,40 @@
+{% extends 'base1.html' %}
+{% block title %} Datas {% endblock %}
+
+{% block body %}
+
+<div class="main-container">
+ 
+    <div>Recorded on:{{ data[6] }}</div>
+
+
+    <table id="mySelectData">
+        <tr class="header1">
+          <th style="width:16;">No. Plate</th>
+          <th style="width:16%;">Issue Date</th>
+          <th style="width:16%;">Location</th>
+          <th style="width:20%;">Offence</th>
+          <th style="width:16%;">Status</th>
+          <th style="width:16%;">Reported By</th>
+    
+        </tr>
+        <tr> 
+            <td>{{ data[1] }}</td>
+            <td>{{ data[0] }}</td>
+            <td>{{ data[2] }}</td>
+            <td>{{ data[3] }}</td>
+            <td>{{ data[4] }}</td>
+            <td>{{ data[5] }}</td>
+        <tr>
+    </table>
+
+    <div style="text-align: center;" class="main-container">
+        <button style="text-decoration: none; color: rgb(98, 0, 255);" onclick=window.location.href="{{ url_for('main.edit_data', data_id=data_id) }}" class="buttonblock">EDIT</button>
+        <button style="text-align: center; color: red;" onclick=window.location.href="{{ url_for('main.delete_data', data_id=data_id) }}" class="buttonblock">DELETE</button>
+        <button onclick="window.location.href='http://127.0.0.1:5000/datas'" class="buttonblock">BACK</button>
+    </div>
+    
+
+</div>
+{% endblock %}
+

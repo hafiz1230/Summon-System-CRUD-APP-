@@ -1,0 +1,31 @@
+{% extends 'base1.html' %}
+{% block title %} Create Data {% endblock %}
+
+{% block body %}
+
+<div style="text-align: left;" class="main-container">
+    <form method="POST">
+        ROAD SUMMON SYSTEM
+        <hr>
+        Issue Date: <br><input value={{ data[0] }} type="text"name="issue_date" class="buttonblock">
+        <br>
+        No. Plate: <br><input value={{ data[1] }} type="text"name="no_plate" class="buttonblock">
+        <br>
+        Location: <br><input value={{ data[2] }} type="text"name="location" class="buttonblock">
+        <br>
+        Offence: <br><textarea name="offence" class="buttonblock">{{ data[3] }}</textarea>
+        <br>
+        Status: <br><input value={{ data[4] }} type="text"name="status" class="buttonblock">
+        <br>
+        Reported By:<br><textarea name="reported_by" class="buttonblock">{{ data[5] }}</textarea>
+        <br>
+        <button type="submit" class="buttonblock">
+        SUBMIT
+        </button>
+        <button onclick="window.location.href='http://127.0.0.1:5000/datas'" class="buttonblock">
+        BACK
+        </button>
+    </form>
+</div>
+
+{% endblock %}

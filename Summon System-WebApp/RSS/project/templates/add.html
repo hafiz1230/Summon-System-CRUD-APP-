@@ -1,0 +1,31 @@
+{% extends 'base1.html' %}
+
+{% block title %} Create Data {% endblock %}
+
+{% block body %}
+
+    <div style="text-align: left;" class="main-container">
+        <form method="POST">
+            ROAD SUMMON SYSTEM
+            <hr>
+            Issue Date: <br><input type="text"name="issue_date" class="buttonblock">
+            <br>
+            No. Plate: <br><input type="text"name="no_plate" class="buttonblock">
+            <br>
+            Location: <br><input type="text"name="location" class="buttonblock">
+            <br>
+            Offence: <br><textarea name="offence"class="buttonblock"></textarea>
+            <br>
+            Status: <br><input type="text"name="status" class="buttonblock">
+            <br>
+            Reported By: <br><textarea name="reported_by" class="buttonblock"></textarea>
+            <hr>
+            <button type="submit" class="buttonblock">
+            SUBMIT
+            </button>
+        </form>
+        <button onclick="window.location.href='http://127.0.0.1:5000/mainpage'" class="buttonblock">
+        BACK
+        </button>
+    </div>
+{% endblock %}
